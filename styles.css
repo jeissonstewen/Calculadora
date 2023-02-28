@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+}
+body{
+    padding: 15px;
+    
+}
+header h1{
+    text-align: center;
+}
+.container{
+    height: 60%;
+    width: 50%;
+    border: solid 1px;
+    margin: auto;  
+    padding: 10px;
+}
+.resultado{
+    height: 10%;
+    width: 80%;
+    border: solid 1px gray;
+    margin: auto;
+    display: flex;
+    align-items: center;  
+    justify-content: end;
+    padding: 0 20px;
+}
+.operacion{
+    height: 10%;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center
+}
+.valor{
+    height: 90%;
+    width: 20%;
+    margin: auto 10px;
+    text-align: center;
+}
+.signo{
+    height: 70%;
+    width: 10%;
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* con grid area */
+/* .elementos{
+    height: 70%;
+    width: 50%;
+    border: solid 1px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "a b c d"
+                         "e f g h"
+                         "i j k l"
+                         "m n o p";
+}
+.elem7{
+    grid-area: a;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elem8{
+    grid-area: b;
+
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elem9{
+    grid-area: c;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elemMAS{
+    grid-area: d;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elem4{
+    grid-area: e;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elem5{
+    grid-area: f;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elem6{
+    grid-area: g;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elem-{
+    grid-area: h;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elem1{
+    grid-area: i;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elem2{
+    grid-area: j;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elem3{
+    grid-area: k;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elemX{
+    grid-area: l;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elem0{
+    grid-area: m;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elemIGUAL{
+    grid-area: n;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+.elemAC{
+    grid-area: o;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+}
+
+.elemDIV{
+    grid-area: p;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px;
+    margin: auto;
+} */
+
+/* con flex y secciones */
+
+.elementos{
+    height: 70%;
+    width: 50%;
+    margin: auto;
+}
+.section1, .section2, .section3, .section4{
+    display: flex;
+    gap: 10px;
+    height: 10vh;
+    margin-bottom: 10px;
+}
+.boton{
+    height: 70%;
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(190, 186, 186);
+}
