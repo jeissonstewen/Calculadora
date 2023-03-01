@@ -34,13 +34,6 @@ header h1{
     background-color: lightsteelblue;
     font-size: x-large;
 }
-.operacion{
-    height: 10%;
-    width: 40%;
-    margin: auto;
-    display: flex;
-    justify-content: center
-}
 .valor{
     height: 90%;
     width: 20%;

@@ -1,57 +1,25 @@
-let mem = []
-function operacion(operando) {
-    switch (operando) {
-        case '+':
-            if (num1.value != '') {
-                mem.push(num1.value)
-            }
-            signo.innerText = '+'
-            num1.value = ''
-            break
-        case '-':
-            if (num1.value != '') {
-                mem.push(num1.value)
-            }
-            signo.innerText = '-'
-            num1.value = ''
-            break
-        case '*':
-            if (num1.value != '') {
-                mem.push(num1.value)
-            } signo.innerText = 'x'
-            num1.value = ''
-            break
-        case '/':
-            if (num1.value != '') {
-                mem.push(num1.value)
-            } signo.innerText = '/'
-            num1.value = ''
-            break
-        case 'AC':
-            mem=[]
-            signo.innerText = ''
-            num1.value = ''
-            solucion.innerText = ''
-            break
-        case '=':
-            let suma
-            if (num1.value != '') {
-                mem.push(num1.value)
-            }
-            if (signo.innerText == '+') {
-                suma = mem.reduce((a, b) => +a + +b)
-            } else if (signo.innerText == '-') {
-                suma = mem.reduce((a, b) => a - b)
-            } else if (signo.innerText == 'x') {
-                suma = mem.reduce((a, b) => a * b)
-            } else if (signo.innerText == '/') {
-                suma = mem.reduce((a, b) => a / b)
-            }
-            solucion.innerText = suma
-            num1.value = ''
-            mem = [suma ]
-            console.log(suma)
-            console.log(mem)
-            break
-    }
+let dato = 0, mem =[]
+for(let i=0; i<=15; i++){
+    document.getElementById('btn_'+i).addEventListener('click',(event)=>mostrar(event.target))
+    
 }
+function mostrar(tecla){
+    document.getElementById('solucion').innerHTML =    document.getElementById('solucion').innerHTML+tecla.value
+}
+addEventListener('keypress',evento =>{
+    /* if(evento.key=='+' || evento.key=='-' || evento.key=='*' || evento.key=='/')
+    operando(evento.target) */
+
+    if(!isNaN(evento.key))
+        mostrar2(evento.key)  
+})
+function mostrar2(tecla){
+    document.getElementById('solucion').innerHTML =document.getElementById('solucion').innerHTML+tecla
+}
+
+addEventListener('keypress',evento =>{
+    if(evento.key=='+'){
+        dato =+ dato + + solucion.innerHTML 
+        solucion.innerHTML = ''        
+    }        
+})
