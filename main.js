@@ -1,33 +1,57 @@
-function operacion(operando){
-    switch(operando){
+let mem = []
+function operacion(operando) {
+    switch (operando) {
         case '+':
-            resultado =+ num1.value + + num2.value
-            console.log(resultado)
+            if (num1.value != '') {
+                mem.push(num1.value)
+            }
             signo.innerText = '+'
+            num1.value = ''
             break
         case '-':
-            resultado = num1.value - num2.value
-            console.log(resultado)
+            if (num1.value != '') {
+                mem.push(num1.value)
+            }
             signo.innerText = '-'
+            num1.value = ''
             break
         case '*':
-            resultado = num1.value * num2.value
-            console.log(resultado)
-            signo.innerText = 'x'
+            if (num1.value != '') {
+                mem.push(num1.value)
+            } signo.innerText = 'x'
+            num1.value = ''
             break
         case '/':
-            resultado = num1.value / num2.value
-            console.log(resultado)
-            signo.innerText = '/'
+            if (num1.value != '') {
+                mem.push(num1.value)
+            } signo.innerText = '/'
+            num1.value = ''
             break
         case 'AC':
+            mem=[]
             signo.innerText = ''
             num1.value = ''
-            num2.value = ''
-            resultado = ''
+            solucion.innerText = ''
+            break
         case '=':
-            solucion.innerText = resultado
-            console.log(resultado)
+            let suma
+            if (num1.value != '') {
+                mem.push(num1.value)
+            }
+            if (signo.innerText == '+') {
+                suma = mem.reduce((a, b) => +a + +b)
+            } else if (signo.innerText == '-') {
+                suma = mem.reduce((a, b) => a - b)
+            } else if (signo.innerText == 'x') {
+                suma = mem.reduce((a, b) => a * b)
+            } else if (signo.innerText == '/') {
+                suma = mem.reduce((a, b) => a / b)
+            }
+            solucion.innerText = suma
+            num1.value = ''
+            mem = [suma ]
+            console.log(suma)
+            console.log(mem)
             break
     }
 }
